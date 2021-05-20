@@ -302,6 +302,14 @@ img {
   margin: 0 auto;
 }
 
+p.body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+
 .current {
   border-bottom: 3px solid #fdd908;
 }
@@ -360,12 +368,10 @@ header .img-container {
 
 .info {
   background: #eafefc;
-  padding: 10% 0;
+  padding: 150px 0;
 }
 .info .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
   grid-template-columns: 1fr 1fr;
 }
 .info .icon-span {
@@ -376,6 +382,19 @@ header .img-container {
   width: 50px;
   padding: 10px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #0d457f;
+}
+.info h2 {
+  display: inline;
+  color: #0d457f;
+  font-family: "IM Fell English", serif;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 99.8px;
+  text-transform: uppercase;
+}
+
+.programs {
+  background: #0d457f;
 }
