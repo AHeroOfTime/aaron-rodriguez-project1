@@ -269,12 +269,9 @@ html {
   overflow: hidden;
 }
 
-* {
-  border: 1px solid red;
-}
-
 html {
   font-size: 125%;
+  overflow-x: hidden;
 }
 
 a {
@@ -295,6 +292,8 @@ h1 {
 img {
   display: block;
   width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .wrapper {
@@ -312,7 +311,7 @@ header {
   background-image: url(/assets/home-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 70vh;
+  height: 60vh;
 }
 header nav {
   padding: 4rem 0;
@@ -334,11 +333,49 @@ header a {
   letter-spacing: 1px;
   padding: 3px;
 }
+header .wrapper {
+  height: 100%;
+}
+header .header-container {
+  height: 100%;
+  position: relative;
+}
 header h1 {
   color: #fdd908;
   font-family: "IM Fell English", serif;
   font-size: 79px;
   font-weight: 400;
+  text-transform: uppercase;
   text-shadow: 1px 1px 2px #000;
   width: 50%;
+  position: absolute;
+  top: 20%;
+}
+header .img-container {
+  width: 60%;
+  position: absolute;
+  top: -5%;
+  right: -6%;
+}
+
+.info {
+  background: #eafefc;
+  padding: 10% 0;
+}
+.info .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+}
+.info .icon-span {
+  display: inline-block;
+  border-radius: 50%;
+  background: #fdd908;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #0d457f;
 }
