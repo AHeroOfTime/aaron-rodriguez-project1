@@ -282,9 +282,7 @@ li {
   list-style: none;
 }
 
-body,
-ul,
-h1 {
+* {
   margin: 0;
   padding: 0;
 }
@@ -314,11 +312,23 @@ p.body {
   border-bottom: 3px solid #fdd908;
 }
 
+.btn {
+  background: #fdd908;
+  font-family: "IM Fell English", serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 22.4px;
+  line-height: 41.6px;
+  text-transform: uppercase;
+  padding: 10px 10px;
+}
+
 header {
   background: #0d457f;
   background-image: url(/assets/home-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
   height: 60vh;
 }
 header nav {
@@ -363,7 +373,7 @@ header .img-container {
   width: 60%;
   position: absolute;
   top: -5%;
-  right: -6%;
+  right: -100px;
 }
 
 .info {
@@ -384,6 +394,7 @@ header .img-container {
   text-align: center;
   font-size: 1.2rem;
   color: #0d457f;
+  margin-right: 15px;
 }
 .info h2 {
   display: inline;
@@ -393,8 +404,77 @@ header .img-container {
   font-weight: 400;
   line-height: 99.8px;
   text-transform: uppercase;
+  margin: 0;
+}
+.info p {
+  padding-left: 72px;
 }
 
 .programs {
   background: #0d457f;
+}
+.programs .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+}
+.programs .left {
+  -webkit-box-shadow: 20px 20px #fdd908;
+          box-shadow: 20px 20px #fdd908;
+  position: relative;
+  left: -100px;
+  top: -50px;
+}
+.programs .right-text {
+  padding-left: 80px;
+  text-align: left;
+}
+.programs .left-text {
+  padding-right: 80px;
+  text-align: right;
+}
+.programs .left-text .body {
+  text-align: left;
+}
+.programs .right {
+  -webkit-box-shadow: -20px 20px #fdd908;
+          box-shadow: -20px 20px #fdd908;
+  position: relative;
+  right: -100px;
+  bottom: -50px;
+}
+.programs h3 {
+  color: #ffffff;
+  font-family: "IM Fell English", serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 58px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+.programs .text-container {
+  padding-top: 50px;
+  color: #ffffff;
+}
+.programs .body {
+  margin-bottom: 20px;
+}
+
+.find-out {
+  background: #eafefc;
+  padding: 150px;
+  text-align: center;
+}
+.find-out h2 {
+  color: #0d457f;
+  font-family: "IM Fell English", serif;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 99.8px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.find-out .body {
+  padding: 0 75px 50px;
+  text-align: left;
 }
