@@ -278,10 +278,6 @@ a {
   text-decoration: none;
 }
 
-a:visited {
-  color: inherit;
-}
-
 li {
   list-style: none;
 }
@@ -347,7 +343,8 @@ header ul {
 header ul li {
   margin-right: 40px;
 }
-header a {
+header a,
+header a:visited {
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -460,6 +457,10 @@ header .img-container {
   padding-top: 50px;
   color: #ffffff;
 }
+.programs a,
+.programs a:visited {
+  color: #0d457f;
+}
 .programs .body {
   margin-bottom: 20px;
 }
@@ -481,6 +482,10 @@ header .img-container {
 .find-out .body {
   padding: 0 75px 50px;
   text-align: left;
+}
+.find-out a,
+.find-out a:visited {
+  color: #0d457f;
 }
 
 .banner-img {
@@ -517,12 +522,16 @@ header .img-container {
   font-weight: 400;
   line-height: 38px;
   text-transform: uppercase;
-  margin: 0;
+  margin-bottom: 20px;
 }
 .contest .btn {
   position: relative;
   left: 0;
   top: 26%;
+}
+.contest a,
+.contest a:visited {
+  color: #0d457f;
 }
 
 .gallery {
@@ -541,4 +550,14 @@ footer {
   text-align: center;
   font-family: "Roboto", sans-serif;
   padding: 10px;
+}
+
+header {
+  background-image: url(/assets/blog-header.jpg);
+}
+header h1 {
+  color: #ffffff;
+  font-family: "IM Fell English", serif;
+  position: static;
+  margin: 0;
 }
