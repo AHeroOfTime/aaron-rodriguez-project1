@@ -42,6 +42,45 @@ p.body {
   letter-spacing: 1px;
 }
 
+form {
+  input[type='text'],
+  input[type='email'] {
+    width: 45%;
+    border: 0;
+    border-bottom: 2px solid $warm;
+    background: transparent;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+
+  input[type='text'] {
+    margin-right: 68px;
+  }
+
+  textarea {
+    width: 100%;
+    // border: 0;
+    border: 2px solid $warm;
+    background: transparent;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+
+  .btn {
+    border: none;
+    background: $dark;
+    color: $warm;
+    font-family: $italic-font;
+    font-weight: 400;
+    text-align: center;
+    font-size: 22.4px;
+    line-height: 41.6px;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    width: 100%;
+  }
+}
+
 // utility classes
 .current {
   border-bottom: 3px solid $warm;
@@ -346,12 +385,13 @@ header.blog-header {
 // blog main content
 .blog-main {
   background: $light;
-  padding: 100px 0;
+  padding: 100px 0 0;
 
   .wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 100px;
+    margin-bottom: -40px;
   }
 
   // aside/sidebar styles

@@ -308,6 +308,39 @@ p.body {
   letter-spacing: 1px;
 }
 
+form input[type=text],
+form input[type=email] {
+  width: 45%;
+  border: 0;
+  border-bottom: 2px solid #fdd908;
+  background: transparent;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+form input[type=text] {
+  margin-right: 68px;
+}
+form textarea {
+  width: 100%;
+  border: 2px solid #fdd908;
+  background: transparent;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+form .btn {
+  border: none;
+  background: #0d457f;
+  color: #fdd908;
+  font-family: "IM Fell English", serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 22.4px;
+  line-height: 41.6px;
+  text-transform: uppercase;
+  padding: 10px 10px;
+  width: 100%;
+}
+
 .current {
   border-bottom: 3px solid #fdd908;
 }
@@ -567,12 +600,13 @@ header.blog-header .header-container {
 
 .blog-main {
   background: #eafefc;
-  padding: 100px 0;
+  padding: 100px 0 0;
 }
 .blog-main .wrapper {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-gap: 100px;
+  margin-bottom: -40px;
 }
 .blog-main .mission {
   background: #0d457f;
