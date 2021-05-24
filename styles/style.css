@@ -589,7 +589,7 @@ header.blog-header .header-container {
 .blog-main .mission .text-container {
   padding: 0 30px 30px;
 }
-.blog-main .mission h3 {
+.blog-main .mission h4 {
   color: #fdd908;
   font-family: "IM Fell English", serif;
   font-weight: 400;
@@ -619,11 +619,14 @@ header.blog-header .header-container {
 
 .blog-post {
   position: relative;
-  top: -10%;
+  top: -7%;
 }
 .blog-post .blog-img {
   -webkit-box-shadow: -20px 20px #fdd908;
           box-shadow: -20px 20px #fdd908;
+  width: 110%;
+  position: relative;
+  left: 20px;
 }
 .blog-post .post {
   border-left: 5px solid #fdd908;
@@ -638,5 +641,45 @@ header.blog-header .header-container {
   font-weight: 400;
   line-height: 99.8px;
   text-transform: uppercase;
-  margin: 0;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.blog-post .body {
+  margin-bottom: 20px;
+}
+.blog-post .body:last-of-type {
+  margin-bottom: 0px;
+}
+.blog-post .comments {
+  padding-top: 50px;
+  padding-left: 100px;
+}
+.blog-post .comments h3 {
+  color: #0d457f;
+  font-family: "IM Fell English", serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 58px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.blog-post .comments .comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+}
+.blog-post .comments .profile-photo {
+  width: 94px;
+  height: 94px;
+  margin-right: 40px;
+}
+.blog-post .comments .text-container {
+  width: 79%;
+}
+.blog-post .comments .timestamp {
+  color: #0d457f;
+  font-weight: bold;
+  margin-bottom: 10px;
 }

@@ -370,7 +370,7 @@ header.blog-header {
       padding: 0 30px 30px;
     }
 
-    h3 {
+    h4 {
       color: $warm;
       font-family: $italic-font;
       font-weight: 400;
@@ -406,14 +406,15 @@ header.blog-header {
 // blog post
 .blog-post {
   position: relative;
-  top: -10%;
+  top: -7%;
 
   .blog-img {
     box-shadow: -20px 20px $warm;
-    // position: relative;
-    // this is setting the right 'overflow' the same as the top img
-    // right: -100px;
-    // bottom: -50px;
+    // make img bigger so it spills out a bit
+    width: 110%;
+    // lines box shadow with border
+    position: relative;
+    left: 20px;
   }
 
   .post {
@@ -430,6 +431,53 @@ header.blog-header {
     font-weight: 400;
     line-height: 99.8px;
     text-transform: uppercase;
-    margin: 0;
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+
+  .body {
+    margin-bottom: 20px;
+  }
+
+  .body:last-of-type {
+    margin-bottom: 0px;
+  }
+
+  // comments
+  .comments {
+    padding-top: 50px;
+    padding-left: 100px;
+
+    h3 {
+      color: $dark;
+      font-family: $italic-font;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 58px;
+      letter-spacing: 1.3px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .comment {
+      display: flex;
+      margin-bottom: 40px;
+    }
+
+    .profile-photo {
+      width: 94px;
+      height: 94px;
+      margin-right: 40px;
+    }
+
+    .text-container {
+      width: 79%;
+    }
+
+    .timestamp {
+      color: $dark;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
   }
 }
