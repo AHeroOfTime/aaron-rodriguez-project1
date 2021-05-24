@@ -328,13 +328,108 @@ footer {
 
 // ! BLOG PAGE
 // blog header
-header {
+header.blog-header {
   background-image: url(/assets/blog-header.jpg);
 
   h1 {
     color: #ffffff;
     font-family: $italic-font;
     position: static;
+    margin: 0;
+  }
+
+  .header-container {
+    height: auto;
+  }
+}
+
+// blog main content
+.blog-main {
+  background: $light;
+  padding: 100px 0;
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 100px;
+  }
+
+  // aside/sidebar styles
+  .mission {
+    background: $dark;
+    height: min-content;
+
+    .img-container {
+      position: relative;
+      top: -15px;
+      left: -115px;
+      width: 125%;
+    }
+
+    .text-container {
+      padding: 0 30px 30px;
+    }
+
+    h3 {
+      color: $warm;
+      font-family: $italic-font;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 58px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .body {
+      color: #ffffff;
+      margin-bottom: 30px;
+    }
+
+    a,
+    a:visited {
+      color: #ffffff;
+      font-family: $main-font;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: 1px;
+    }
+
+    li {
+      list-style: disc;
+      color: #ffffff;
+      margin-left: 20px;
+    }
+  }
+}
+
+// blog post
+.blog-post {
+  position: relative;
+  top: -10%;
+
+  .blog-img {
+    box-shadow: -20px 20px $warm;
+    // position: relative;
+    // this is setting the right 'overflow' the same as the top img
+    // right: -100px;
+    // bottom: -50px;
+  }
+
+  .post {
+    border-left: 5px solid $warm;
+    border-bottom: 5px solid $warm;
+    padding-bottom: 125px;
+    padding-left: 125px;
+  }
+
+  h2 {
+    color: $dark;
+    font-family: $italic-font;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 99.8px;
+    text-transform: uppercase;
     margin: 0;
   }
 }

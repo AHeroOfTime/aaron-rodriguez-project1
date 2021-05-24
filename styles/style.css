@@ -552,12 +552,91 @@ footer {
   padding: 10px;
 }
 
-header {
+header.blog-header {
   background-image: url(/assets/blog-header.jpg);
 }
-header h1 {
+header.blog-header h1 {
   color: #ffffff;
   font-family: "IM Fell English", serif;
   position: static;
+  margin: 0;
+}
+header.blog-header .header-container {
+  height: auto;
+}
+
+.blog-main {
+  background: #eafefc;
+  padding: 100px 0;
+}
+.blog-main .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 100px;
+}
+.blog-main .mission {
+  background: #0d457f;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+.blog-main .mission .img-container {
+  position: relative;
+  top: -15px;
+  left: -115px;
+  width: 125%;
+}
+.blog-main .mission .text-container {
+  padding: 0 30px 30px;
+}
+.blog-main .mission h3 {
+  color: #fdd908;
+  font-family: "IM Fell English", serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 58px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+.blog-main .mission .body {
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.blog-main .mission a,
+.blog-main .mission a:visited {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+.blog-main .mission li {
+  list-style: disc;
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+.blog-post {
+  position: relative;
+  top: -10%;
+}
+.blog-post .blog-img {
+  -webkit-box-shadow: -20px 20px #fdd908;
+          box-shadow: -20px 20px #fdd908;
+}
+.blog-post .post {
+  border-left: 5px solid #fdd908;
+  border-bottom: 5px solid #fdd908;
+  padding-bottom: 125px;
+  padding-left: 125px;
+}
+.blog-post h2 {
+  color: #0d457f;
+  font-family: "IM Fell English", serif;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 99.8px;
+  text-transform: uppercase;
   margin: 0;
 }
