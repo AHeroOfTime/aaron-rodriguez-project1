@@ -340,6 +340,9 @@ form .btn {
   padding: 10px 10px;
   width: 100%;
 }
+form .btn:hover {
+  cursor: pointer;
+}
 
 .current {
   border-bottom: 3px solid #fdd908;
@@ -358,7 +361,7 @@ form .btn {
 
 header {
   background: #0d457f;
-  background-image: url(/assets/home-header.jpg);
+  background-image: url("../assets/home-header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -523,7 +526,7 @@ header .img-container {
 
 .banner-img {
   background-color: #0d457f;
-  background-image: url(/assets/banner.jpg);
+  background-image: url("../assets/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -586,7 +589,7 @@ footer {
 }
 
 header.blog-header {
-  background-image: url(/assets/blog-header.jpg);
+  background-image: url("../assets/blog-header.jpg");
 }
 header.blog-header h1 {
   color: #ffffff;
@@ -716,4 +719,99 @@ header.blog-header .header-container {
   color: #0d457f;
   font-weight: bold;
   margin-bottom: 10px;
+}
+
+header.contact-header {
+  background-image: url("../assets/contact-header.jpg");
+}
+header.contact-header h1 {
+  color: #ffffff;
+  font-family: "IM Fell English", serif;
+  position: static;
+  margin: 0;
+}
+header.contact-header .header-container {
+  height: auto;
+}
+
+.contact {
+  background: #eafefc;
+  padding-top: 150px;
+}
+.contact .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 100px;
+}
+.contact .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+}
+.contact .social-links a {
+  color: #0d457f;
+}
+.contact .email {
+  color: #000;
+}
+.contact .address {
+  color: #000;
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+.contact .address .phone {
+  color: #000;
+}
+.contact form {
+  background: #0d457f;
+  padding: 50px;
+  -webkit-box-shadow: 20px 20px #fdd908;
+          box-shadow: 20px 20px #fdd908;
+  position: relative;
+  top: -40%;
+  margin-bottom: -80px;
+}
+.contact input[type=text],
+.contact input[type=email] {
+  color: #ffffff;
+}
+.contact input[type=text] {
+  margin-right: 67px;
+}
+.contact textarea {
+  color: #ffffff;
+}
+.contact ::-webkit-input-placeholder {
+  opacity: 1;
+  color: #ffffff;
+}
+.contact ::-moz-placeholder {
+  opacity: 1;
+  color: #ffffff;
+}
+.contact :-ms-input-placeholder {
+  opacity: 1;
+  color: #ffffff;
+}
+.contact ::-ms-input-placeholder {
+  opacity: 1;
+  color: #ffffff;
+}
+.contact ::placeholder {
+  opacity: 1;
+  color: #ffffff;
+}
+.contact .btn {
+  background: #fdd908;
+  color: #0d457f;
 }
