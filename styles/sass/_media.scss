@@ -1,0 +1,22 @@
+// media queries
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  // !MAIN PAGE
+  // info section
+  .info {
+    .wrapper {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  }
+
+  // programs section
+  .programs {
+    .wrapper {
+      grid-gap: 0;
+    }
+  }
+}

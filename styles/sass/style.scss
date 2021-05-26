@@ -3,7 +3,6 @@
 @import 'setup';
 
 // todo: hover states for nav (low priority)
-// hover states for btns as well
 
 html {
   font-size: 125%;
@@ -60,7 +59,6 @@ form {
 
   textarea {
     width: 100%;
-    // border: 0;
     border: 2px solid $warm;
     background: transparent;
     padding: 20px;
@@ -446,6 +444,13 @@ header.blog-header {
       margin-left: 20px;
     }
   }
+
+  form {
+    ::placeholder {
+      // increases opacity for FF
+      opacity: 1;
+    }
+  }
 }
 
 // blog post
@@ -618,3 +623,6 @@ header.contact-header {
     color: $dark;
   }
 }
+
+// import media query partials
+@import 'media';

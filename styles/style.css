@@ -653,6 +653,21 @@ header.blog-header .header-container {
   color: #ffffff;
   margin-left: 20px;
 }
+.blog-main form ::-webkit-input-placeholder {
+  opacity: 1;
+}
+.blog-main form ::-moz-placeholder {
+  opacity: 1;
+}
+.blog-main form :-ms-input-placeholder {
+  opacity: 1;
+}
+.blog-main form ::-ms-input-placeholder {
+  opacity: 1;
+}
+.blog-main form ::placeholder {
+  opacity: 1;
+}
 
 .blog-post {
   position: relative;
@@ -814,4 +829,19 @@ header.contact-header .header-container {
 .contact .btn {
   background: #fdd908;
   color: #0d457f;
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .info .wrapper {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .programs .wrapper {
+    grid-gap: 0;
+  }
 }
