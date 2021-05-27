@@ -1,5 +1,21 @@
+// todo: finished main @ 1120, check other pages
+
 // media queries
+// !EDGECASES OVER 1200
+@media (max-width: 1520px) {
+  // contest section
+  .contest {
+    padding: 150px 50px;
+
+    .wrapper {
+      grid-template-columns: 1fr 2fr;
+    }
+  }
+}
+
+// !MAIN BREAKPOINTS
 @media (max-width: 1200px) {
+  // general styles
   .wrapper {
     width: 90%;
   }
@@ -11,6 +27,10 @@
       grid-template-columns: 1fr;
       text-align: center;
     }
+
+    p {
+      padding-left: 0;
+    }
   }
 
   // programs section
@@ -19,4 +39,104 @@
       grid-gap: 0;
     }
   }
+
+  // find out more section
+  .find-out {
+    padding: 150px 0;
+    .body {
+      padding: 0 0 50px;
+    }
+  }
+
+  // banner image
+  .banner-img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 1120px) {
+  // !MAIN PAGE
+  // header section
+  header {
+    .img-container {
+      display: none;
+    }
+  }
+
+  // info section
+  .info {
+    padding: 50px 0 150px;
+  }
+
+  // programs section
+  .programs {
+    padding: 50px 0;
+
+    .wrapper {
+      grid-template-columns: 1fr;
+      grid-gap: 40px;
+    }
+
+    // bad class name ik
+    .left {
+      width: 60%;
+      position: static;
+      margin: 0 auto;
+    }
+
+    .right-text {
+      padding-left: 0px;
+      text-align: center;
+    }
+
+    .left-text {
+      padding-right: 0px;
+      text-align: center;
+
+      .body {
+        text-align: center;
+      }
+    }
+
+    .right {
+      width: 60%;
+      position: static;
+      margin: 0 auto;
+    }
+
+    h3 {
+      text-align: center;
+    }
+
+    .text-container {
+      padding-top: 10px;
+    }
+  }
+
+  // find out more section
+  .find-out {
+    padding: 100px 0;
+  }
+
+  // contest section
+  .contest {
+    padding: 100px 50px 150px;
+
+    .wrapper {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+// breakpoints from notes
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
 }

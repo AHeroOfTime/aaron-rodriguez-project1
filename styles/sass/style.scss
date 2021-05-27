@@ -3,6 +3,10 @@
 @import 'setup';
 
 // todo: hover states for nav (low priority)
+* {
+  margin: 0;
+  padding: 0;
+}
 
 html {
   font-size: 125%;
@@ -15,11 +19,6 @@ a {
 
 li {
   list-style: none;
-}
-
-* {
-  margin: 0;
-  padding: 0;
 }
 
 img {

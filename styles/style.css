@@ -269,6 +269,11 @@ html {
   overflow: hidden;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-size: 125%;
   overflow-x: hidden;
@@ -280,11 +285,6 @@ a {
 
 li {
   list-style: none;
-}
-
-* {
-  margin: 0;
-  padding: 0;
 }
 
 img {
@@ -831,6 +831,14 @@ header.contact-header .header-container {
   color: #0d457f;
 }
 
+@media (max-width: 1520px) {
+  .contest {
+    padding: 150px 50px;
+  }
+  .contest .wrapper {
+    grid-template-columns: 1fr 2fr;
+  }
+}
 @media (max-width: 1200px) {
   .wrapper {
     width: 90%;
@@ -840,8 +848,80 @@ header.contact-header .header-container {
     grid-template-columns: 1fr;
     text-align: center;
   }
+  .info p {
+    padding-left: 0;
+  }
 
   .programs .wrapper {
     grid-gap: 0;
   }
+
+  .find-out {
+    padding: 150px 0;
+  }
+  .find-out .body {
+    padding: 0 0 50px;
+  }
+
+  .banner-img {
+    height: 300px;
+  }
 }
+@media (max-width: 1120px) {
+  header .img-container {
+    display: none;
+  }
+
+  .info {
+    padding: 50px 0 150px;
+  }
+
+  .programs {
+    padding: 50px 0;
+  }
+  .programs .wrapper {
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+  }
+  .programs .left {
+    width: 60%;
+    position: static;
+    margin: 0 auto;
+  }
+  .programs .right-text {
+    padding-left: 0px;
+    text-align: center;
+  }
+  .programs .left-text {
+    padding-right: 0px;
+    text-align: center;
+  }
+  .programs .left-text .body {
+    text-align: center;
+  }
+  .programs .right {
+    width: 60%;
+    position: static;
+    margin: 0 auto;
+  }
+  .programs h3 {
+    text-align: center;
+  }
+  .programs .text-container {
+    padding-top: 10px;
+  }
+
+  .find-out {
+    padding: 100px 0;
+  }
+
+  .contest {
+    padding: 100px 50px 150px;
+  }
+  .contest .wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
