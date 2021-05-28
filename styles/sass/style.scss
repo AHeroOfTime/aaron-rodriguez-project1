@@ -83,6 +83,12 @@ form {
   }
 }
 
+.hamburger-menu {
+  display: none;
+  color: $warm;
+  font-size: 40px;
+}
+
 // utility classes
 .current {
   border-bottom: 3px solid $warm;
@@ -541,6 +547,7 @@ header.contact-header {
     font-family: $italic-font;
     position: static;
     margin: 0;
+    width: 100%;
   }
 
   .header-container {
