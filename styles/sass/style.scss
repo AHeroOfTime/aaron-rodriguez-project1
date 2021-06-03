@@ -87,6 +87,8 @@ form {
   display: none;
   color: $warm;
   font-size: 40px;
+  background: $dark;
+  border-radius: 50%;
 }
 
 // utility classes
@@ -103,6 +105,17 @@ form {
   line-height: 41.6px;
   text-transform: uppercase;
   padding: 10px 10px;
+}
+
+.open {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  text-align: center;
+  position: fixed;
+  background: rgba(13, 69, 127, 1);
+  z-index: 5;
+  padding: 20px;
 }
 
 // !MAIN PAGE

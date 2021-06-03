@@ -348,6 +348,8 @@ form .btn:hover {
   display: none;
   color: #fdd908;
   font-size: 40px;
+  background: #0d457f;
+  border-radius: 50%;
 }
 
 .current {
@@ -363,6 +365,22 @@ form .btn:hover {
   line-height: 41.6px;
   text-transform: uppercase;
   padding: 10px 10px;
+}
+
+.open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  text-align: center;
+  position: fixed;
+  background: #0d457f;
+  z-index: 5;
+  padding: 20px;
 }
 
 header {
@@ -1092,6 +1110,9 @@ header.contact-header .header-container {
 
   .hamburger-menu {
     display: block;
+    position: fixed;
+    z-index: 10;
+    padding: 20px;
   }
 
   header {
@@ -1102,6 +1123,9 @@ header.contact-header .header-container {
   }
   header ul {
     display: none;
+  }
+  header li {
+    padding: 10px;
   }
   header nav {
     padding-top: 2rem;
